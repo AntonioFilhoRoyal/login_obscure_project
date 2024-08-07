@@ -16,6 +16,139 @@
 /* CSS ESCOPO LOCAL*/
 
 body{
+    padding: 0;
+    margin: 0;
     background-color: black;
-    color: wheat;
+    color: white;
+}
+
+.header-body{
+    width: 100%;
+    min-height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: shadow-header 3s linear infinite;
+}
+
+.header-body .h2{
+    font-family: 'Edu AU VIC WA NT Hand';
+    letter-spacing: 20px;
+}
+
+.main-body{
+    min-height: 90vh;
+
+}
+
+form{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-login{
+    min-width: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+.input-login{
+    padding: 3px;
+    min-width: 100%;
+    min-height: 24px;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    outline: none;
+    border-right: none;
+    border-top: none;
+    border-left: 1px solid red;
+    border-bottom: 1px solid red;
+    border-radius: 4px;
+
+    transition: 0.2s ease-in-out;
+
+}
+.input-login:focus{
+    border-right: 1px solid red;
+    border-top: 1px solid red;
+    
+}
+
+.input-password{
+    margin-top: 3%;
+}
+
+
+
+.main-div-forgot{
+    margin: 0.3% 0% 1% 0%;
+    padding: 0px 5px;
+    min-width: 20.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-forgot{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-forgot p{
+    margin-left: 2%;
+}
+
+.main-div-forgot .a{
+    color: white;
+}
+
+.main-div-buttons{
+    min-width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.main-div-buttons button{
+    width: 30%;
+    min-height: 3.5vh;
+    background-color: black;
+    color: white;
+    border: 1px solid #4c0e0e;
+    border-radius: 7.5px;
+    transition: 100ms ease-in-out;
+}
+
+.main-div-buttons button:hover{
+    font-weight: 550;
+    letter-spacing: 0.2px;
+    border-right: none;
+    border-top: none;
+    border-left: 3px solid red;
+    border-bottom: 3px solid red;
+    border-radius: 7.5px;
+    cursor: pointer;
+    
+}
+
+.aside-toobar-access{
+    background-color: yellow;
+}
+
+@keyframes shadow-header {
+    0%{box-shadow: 0px 0.5px 10px 0.5px rgb(147, 15, 15)}
+    50%{box-shadow: 0px 3px 10px 1px rgb(147, 15, 15)}
+    100%{box-shadow: 0px 0.5px 10px 0.5px rgb(147, 15, 15)}
+
 }
